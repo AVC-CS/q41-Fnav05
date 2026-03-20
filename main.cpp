@@ -19,6 +19,24 @@ int main()
     cin >> choice;
 
     // TODO
+    if (choice == 1) {
+        cin >> radius;
+        area = PI * radius * radius;
+    }
+    else if (choice == 2) {
+        cin >> width >> height;
+        area = width * height;
+    }
+    else if (choice == 3) {
+        cin >> base >> height;
+        area = base * height * 0.5;
+    }
+    else if (choice == 4) {
+        cout << "Program Stopped";
+    }
+    else {
+        cout << "Wrong number";
+    }
 
     cout << left << setprecision(2) << fixed;
     cout << "The area is " << area << endl;
